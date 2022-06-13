@@ -1,11 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./App.css";
-import { UserCard } from "./components/UserCard";
+import { UserDetails } from "./components/UserDetails";
 
 function App() {
   return (
     <div className="App">
-      <UserCard></UserCard>
+      <UserDetails></UserDetails>
     </div>
   );
 }
