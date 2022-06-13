@@ -1,57 +1,33 @@
-export const UserCard = () => {
-  let data = {
-    id: 1,
-    name: "Leanne Graham",
-    username: "Bret",
-    email: "Sincere@april.biz",
-    address: {
-      street: "Kulas Light",
-      suite: "Apt. 556",
-      city: "Gwenborough",
-      zipcode: "92998-3874",
-      geo: {
-        lat: "-37.3159",
-        lng: "81.1496",
-      },
-    },
-    phone: "1-770-736-8031 x56442",
-    website: "hildegard.org",
-    company: {
-      name: "Romaguera-Crona",
-      catchPhrase: "Multi-layered client-server neural-net",
-      bs: "harness real-time e-markets",
-    },
-  };
-
+export const UserCard = ({ name, email, phone, website }: any) => {
   return (
     <div className="w-52 border-2 m-3 flex flex-col">
       <div className="p-3">
         <img
-          src="https://avatars.dicebear.com/v2/avataaars/hello.svg?options[mood][]=happy"
+          src={`https://avatars.dicebear.com/v2/avataaars/${name}.svg?options[mood][]=happy`}
           className="w-42 mx-auto"
         ></img>
       </div>
 
       <div className="p-3">
-        <p className="text-sm font-bold">{data.name}</p>
+        <p className="text-sm font-bold">{name}</p>
         <p className="text-xs mt-1.5 mb-2 text-gray-500">
           <span className="material-symbols-outlined text-sm relative top-0.5 mr-1">
             mail
           </span>
-          {data.email}
+          {email}
         </p>
         <p className="text-xs mt-2 mb-2 text-gray-500">
           {" "}
           <span className="material-symbols-outlined text-sm relative top-0.5 mr-1">
             phone_enabled
           </span>
-          {data.phone}
+          {phone}
         </p>
         <p className="text-xs mt-2 mb-2 text-gray-500">
           <span className="material-symbols-outlined text-sm relative top-0.5 mr-1">
             pin_drop
           </span>
-          {data.website}
+          {website}
         </p>
       </div>
 
