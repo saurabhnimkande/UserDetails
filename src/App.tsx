@@ -1,10 +1,11 @@
 import React from "react";
 import "./App.css";
+import { UserCard } from "./components/UserCard";
 
 function App() {
   return (
     <div className="App">
-      <h1 className="text-3xl font-bold underline">Hello</h1>
+      <UserCard></UserCard>
     </div>
   );
 }
