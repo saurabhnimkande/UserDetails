@@ -1,10 +1,11 @@
 export const UserCard = ({ name, email, phone, website }: any) => {
   return (
-    <div className="w-52 border-2 m-3 flex flex-col">
+    <div className="w-52 border-2 flex flex-col">
       <div className="p-3">
         <img
           src={`https://avatars.dicebear.com/v2/avataaars/${name}.svg?options[mood][]=happy`}
           className="w-42 mx-auto"
+          alt={name}
         ></img>
       </div>
 
